@@ -12,6 +12,11 @@
 		012EC0031DB8B8720022B70B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EC0021DB8B8720022B70B /* ViewController.m */; };
 		012EC0051DB8B8720022B70B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 012EC0041DB8B8720022B70B /* Assets.xcassets */; };
 		012EC0081DB8B8720022B70B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012EC0061DB8B8720022B70B /* Main.storyboard */; };
+		01D6A2C51DB9EC7E00AC0500 /* ICBaseHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D6A2C01DB9EC7E00AC0500 /* ICBaseHttpService.m */; };
+		01D6A2C61DB9EC7E00AC0500 /* XHNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D6A2C21DB9EC7E00AC0500 /* XHNetworkManager.m */; };
+		01D6A2C71DB9EC7E00AC0500 /* XHPricePullService.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D6A2C41DB9EC7E00AC0500 /* XHPricePullService.m */; };
+		01D6A2CB1DB9ECBE00AC0500 /* XHPriceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D6A2CA1DB9ECBE00AC0500 /* XHPriceModel.m */; };
+		D709D20E8AB70521F14AC961 /* libPods-XHHelper-Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BA60C4C00FF9DF57842D50 /* libPods-XHHelper-Mac.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,17 @@
 		012EC0041DB8B8720022B70B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		012EC0071DB8B8720022B70B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		012EC0091DB8B8720022B70B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D6A2BF1DB9EC7E00AC0500 /* ICBaseHttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICBaseHttpService.h; sourceTree = "<group>"; };
+		01D6A2C01DB9EC7E00AC0500 /* ICBaseHttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICBaseHttpService.m; sourceTree = "<group>"; };
+		01D6A2C11DB9EC7E00AC0500 /* XHNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHNetworkManager.h; sourceTree = "<group>"; };
+		01D6A2C21DB9EC7E00AC0500 /* XHNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHNetworkManager.m; sourceTree = "<group>"; };
+		01D6A2C31DB9EC7E00AC0500 /* XHPricePullService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPricePullService.h; sourceTree = "<group>"; };
+		01D6A2C41DB9EC7E00AC0500 /* XHPricePullService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPricePullService.m; sourceTree = "<group>"; };
+		01D6A2C91DB9ECBE00AC0500 /* XHPriceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPriceModel.h; sourceTree = "<group>"; };
+		01D6A2CA1DB9ECBE00AC0500 /* XHPriceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPriceModel.m; sourceTree = "<group>"; };
+		427FEFAAAB56DBF1824A416C /* Pods-XHHelper-Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHHelper-Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-XHHelper-Mac/Pods-XHHelper-Mac.release.xcconfig"; sourceTree = "<group>"; };
+		6D3D204D19940953EF0C571B /* Pods-XHHelper-Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHHelper-Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XHHelper-Mac/Pods-XHHelper-Mac.debug.xcconfig"; sourceTree = "<group>"; };
+		D2BA60C4C00FF9DF57842D50 /* libPods-XHHelper-Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XHHelper-Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D709D20E8AB70521F14AC961 /* libPods-XHHelper-Mac.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +59,8 @@
 			children = (
 				012EBFFA1DB8B8720022B70B /* XHHelper-Mac */,
 				012EBFF91DB8B8720022B70B /* Products */,
+				E45B2200722F9D6EC7635C93 /* Pods */,
+				2E93A653E17C07FCDCF85A79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +75,8 @@
 		012EBFFA1DB8B8720022B70B /* XHHelper-Mac */ = {
 			isa = PBXGroup;
 			children = (
+				01D6A2C81DB9EC8A00AC0500 /* Models */,
+				01D6A2BE1DB9EC7E00AC0500 /* Services */,
 				012EBFFB1DB8B8720022B70B /* AppDelegate.h */,
 				012EBFFC1DB8B8720022B70B /* AppDelegate.m */,
 				012EC0011DB8B8720022B70B /* ViewController.h */,
@@ -76,6 +97,45 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		01D6A2BE1DB9EC7E00AC0500 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				01D6A2BF1DB9EC7E00AC0500 /* ICBaseHttpService.h */,
+				01D6A2C01DB9EC7E00AC0500 /* ICBaseHttpService.m */,
+				01D6A2C11DB9EC7E00AC0500 /* XHNetworkManager.h */,
+				01D6A2C21DB9EC7E00AC0500 /* XHNetworkManager.m */,
+				01D6A2C31DB9EC7E00AC0500 /* XHPricePullService.h */,
+				01D6A2C41DB9EC7E00AC0500 /* XHPricePullService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		01D6A2C81DB9EC8A00AC0500 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				01D6A2C91DB9ECBE00AC0500 /* XHPriceModel.h */,
+				01D6A2CA1DB9ECBE00AC0500 /* XHPriceModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2E93A653E17C07FCDCF85A79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2BA60C4C00FF9DF57842D50 /* libPods-XHHelper-Mac.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E45B2200722F9D6EC7635C93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D3D204D19940953EF0C571B /* Pods-XHHelper-Mac.debug.xcconfig */,
+				427FEFAAAB56DBF1824A416C /* Pods-XHHelper-Mac.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 012EC00C1DB8B8720022B70B /* Build configuration list for PBXNativeTarget "XHHelper-Mac" */;
 			buildPhases = (
+				21569C2A984DEF8B00F2F206 /* Check Pods Manifest.lock */,
 				012EBFF41DB8B8710022B70B /* Sources */,
 				012EBFF51DB8B8710022B70B /* Frameworks */,
 				012EBFF61DB8B8710022B70B /* Resources */,
+				1129A0DAB583F2331A5B53DD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -141,14 +203,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1129A0DAB583F2331A5B53DD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XHHelper-Mac/Pods-XHHelper-Mac-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21569C2A984DEF8B00F2F206 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		012EBFF41DB8B8710022B70B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D6A2C71DB9EC7E00AC0500 /* XHPricePullService.m in Sources */,
 				012EC0031DB8B8720022B70B /* ViewController.m in Sources */,
 				012EC0001DB8B8720022B70B /* main.m in Sources */,
+				01D6A2CB1DB9ECBE00AC0500 /* XHPriceModel.m in Sources */,
+				01D6A2C51DB9EC7E00AC0500 /* ICBaseHttpService.m in Sources */,
 				012EBFFD1DB8B8720022B70B /* AppDelegate.m in Sources */,
+				01D6A2C61DB9EC7E00AC0500 /* XHNetworkManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +354,7 @@
 		};
 		012EC00D1DB8B8720022B70B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D3D204D19940953EF0C571B /* Pods-XHHelper-Mac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -267,6 +367,7 @@
 		};
 		012EC00E1DB8B8720022B70B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 427FEFAAAB56DBF1824A416C /* Pods-XHHelper-Mac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -296,6 +397,7 @@
 				012EC00E1DB8B8720022B70B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

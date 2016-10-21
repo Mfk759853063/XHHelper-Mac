@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -653,10 +654,10 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider=""/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="80" y="-25"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -674,20 +675,142 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="84" y="234"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="496" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="g0y-zo-1qq">
+                                <rect key="frame" x="-2" y="203" width="252" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="油现价" id="YKE-wb-6kW">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jsa-RX-FCH">
+                                <rect key="frame" x="246" y="203" width="252" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="银现价" id="28s-Km-Ls8">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZP5-8x-0cC">
+                                <rect key="frame" x="0.0" y="124" width="248" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="输入" drawsBackground="YES" id="cB8-WO-FF5">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="V1Y-EB-CtU">
+                                <rect key="frame" x="118" y="182" width="12" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="0" id="QGv-WZ-Mk3">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qxU-2G-r0I">
+                                <rect key="frame" x="366" y="182" width="12" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="0" id="RZm-9a-krv">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MRR-7M-kMa">
+                                <rect key="frame" x="96" y="157" width="56" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="油目标点" id="k8p-yk-Dfa">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Yrb-U8-mSX">
+                                <rect key="frame" x="344" y="157" width="56" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="银目标点" id="yrt-Oh-Ou2">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="S6v-HC-84o">
+                                <rect key="frame" x="248" y="124" width="248" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="输入" drawsBackground="YES" id="etR-cv-U27">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="P3E-60-z6x">
+                                <rect key="frame" x="100" y="89" width="48" height="18"/>
+                                <buttonCell key="cell" type="check" title="开启" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="e4i-fb-Bc4">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="oilCheckAction:" target="XfG-lQ-9wD" id="jWp-G3-0nw"/>
+                                </connections>
+                            </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="H2d-Lo-zXd">
+                                <rect key="frame" x="348" y="89" width="48" height="18"/>
+                                <buttonCell key="cell" type="check" title="开启" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="MHI-VL-uQR">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="agCheckAction:" target="XfG-lQ-9wD" id="KVa-Bi-0Vb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ZP5-8x-0cC" firstAttribute="top" secondItem="MRR-7M-kMa" secondAttribute="bottom" constant="11" id="117-XQ-OKt"/>
+                            <constraint firstItem="H2d-Lo-zXd" firstAttribute="centerX" secondItem="S6v-HC-84o" secondAttribute="centerX" id="2ZV-s2-xHO"/>
+                            <constraint firstItem="P3E-60-z6x" firstAttribute="centerX" secondItem="ZP5-8x-0cC" secondAttribute="centerX" id="BPZ-Hm-0bl"/>
+                            <constraint firstItem="MRR-7M-kMa" firstAttribute="top" secondItem="V1Y-EB-CtU" secondAttribute="bottom" constant="8" id="BdJ-HG-Ene"/>
+                            <constraint firstItem="ZP5-8x-0cC" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="CeV-kZ-tno"/>
+                            <constraint firstItem="Yrb-U8-mSX" firstAttribute="centerX" secondItem="jsa-RX-FCH" secondAttribute="centerX" id="H70-vf-G9X"/>
+                            <constraint firstItem="P3E-60-z6x" firstAttribute="top" secondItem="ZP5-8x-0cC" secondAttribute="bottom" constant="19" id="IP8-fC-Zp3"/>
+                            <constraint firstItem="S6v-HC-84o" firstAttribute="leading" secondItem="ZP5-8x-0cC" secondAttribute="trailing" id="Lhk-tW-Ocg"/>
+                            <constraint firstItem="jsa-RX-FCH" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="50" id="NlR-OL-Aes"/>
+                            <constraint firstItem="jsa-RX-FCH" firstAttribute="width" secondItem="g0y-zo-1qq" secondAttribute="width" id="PMe-Sc-QgO"/>
+                            <constraint firstItem="g0y-zo-1qq" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="50" id="QwJ-eR-4tj"/>
+                            <constraint firstItem="S6v-HC-84o" firstAttribute="height" secondItem="ZP5-8x-0cC" secondAttribute="height" id="RJ0-Af-hed"/>
+                            <constraint firstItem="MRR-7M-kMa" firstAttribute="centerX" secondItem="g0y-zo-1qq" secondAttribute="centerX" id="Reb-z5-nDj"/>
+                            <constraint firstItem="qxU-2G-r0I" firstAttribute="top" secondItem="jsa-RX-FCH" secondAttribute="bottom" constant="4" id="V9k-bf-bqR"/>
+                            <constraint firstItem="V1Y-EB-CtU" firstAttribute="baseline" secondItem="qxU-2G-r0I" secondAttribute="baseline" id="bKS-IM-Lin"/>
+                            <constraint firstItem="jsa-RX-FCH" firstAttribute="height" secondItem="g0y-zo-1qq" secondAttribute="height" id="cH7-PC-lgm"/>
+                            <constraint firstItem="V1Y-EB-CtU" firstAttribute="centerX" secondItem="g0y-zo-1qq" secondAttribute="centerX" id="eLa-Jy-eD5"/>
+                            <constraint firstItem="Yrb-U8-mSX" firstAttribute="top" secondItem="qxU-2G-r0I" secondAttribute="bottom" constant="8" id="ebn-Oy-Cnp"/>
+                            <constraint firstItem="H2d-Lo-zXd" firstAttribute="top" secondItem="S6v-HC-84o" secondAttribute="bottom" constant="19" id="gh5-Bw-vjd"/>
+                            <constraint firstItem="g0y-zo-1qq" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="kgz-eM-5dH"/>
+                            <constraint firstItem="jsa-RX-FCH" firstAttribute="leading" secondItem="g0y-zo-1qq" secondAttribute="trailing" id="lr3-f7-jKV"/>
+                            <constraint firstItem="qxU-2G-r0I" firstAttribute="centerX" secondItem="jsa-RX-FCH" secondAttribute="centerX" id="px1-x6-PZe"/>
+                            <constraint firstItem="S6v-HC-84o" firstAttribute="top" secondItem="Yrb-U8-mSX" secondAttribute="bottom" constant="11" id="q3m-8v-4L2"/>
+                            <constraint firstAttribute="trailing" secondItem="S6v-HC-84o" secondAttribute="trailing" id="usT-9B-g3u"/>
+                            <constraint firstItem="S6v-HC-84o" firstAttribute="width" secondItem="ZP5-8x-0cC" secondAttribute="width" id="vHb-8e-785"/>
+                            <constraint firstAttribute="trailing" secondItem="jsa-RX-FCH" secondAttribute="trailing" id="w1A-ZA-y0u"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="agCurrentPriceLabel" destination="qxU-2G-r0I" id="kPt-EI-d90"/>
+                        <outlet property="agEnableButton" destination="H2d-Lo-zXd" id="ThS-zJ-Rzd"/>
+                        <outlet property="agTargetTextField" destination="S6v-HC-84o" id="wmi-WP-3xb"/>
+                        <outlet property="oilCurrentPriceLabel" destination="V1Y-EB-CtU" id="gC3-Kq-cMx"/>
+                        <outlet property="oilEnableButton" destination="P3E-60-z6x" id="blP-uk-uG8"/>
+                        <outlet property="oilTargetTextField" destination="ZP5-8x-0cC" id="7hf-S8-OyT"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="92" y="629"/>
         </scene>
     </scenes>
 </document>
