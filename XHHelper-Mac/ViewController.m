@@ -19,6 +19,10 @@
 @property (assign, nonatomic) BOOL oilCanNotification;
 
 @property (assign, nonatomic) BOOL agCanNotification;
+// 首页url
+@property (strong, nonatomic) NSURL *indexUrl;
+
+@property (strong, nonatomic) NSURL *loginUrl;
 
 @end
 
@@ -32,10 +36,14 @@
 }
 
 - (void)setup {
+    self.title = @"呦，你说我帅不帅";
     self.oilEnableButton.state = 0;
     self.agEnableButton.state = 0;
     self.priceList = @[].mutableCopy;
 
+    self.loginUrl = [NSURL URLWithString:@"http://wp.bsbce.com/login_and.php?password=0c909a141f1f2c0a1cb602b0b2d7d050&mobile=35566543706&sign=440c3b774a8aac838022d8e4d59ce287"];
+    self.indexUrl = [NSURL URLWithString:@"http://wp.bsbce.com/index.php"];
+    
     XHPricePullService *service = [[XHPricePullService alloc] init];
     [service setFetchDataCallback:^(XHPriceModel *price,NSError *error) {
         if (!error) {
@@ -67,6 +75,11 @@
         }
     }];
     [service startService];
+    [self loadWebViewWithRequest:self.loginUrl];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self loadWebViewWithRequest:self.indexUrl];
+    });
+    
 }
 
 - (void)renderUI {
@@ -81,6 +94,11 @@
     if (color) {
         self.agCurrentPriceLabel.textColor = color;
     }
+}
+
+- (void)loadWebViewWithRequest:(NSURL *)url {
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+    [self.webView.mainFrame loadRequest:request];
 }
 
 - (void)setRepresentedObject:(id)representedObject {

@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <WebKit/WebKit.h>
 
 @interface ViewController : NSViewController
 
@@ -21,6 +22,8 @@
 @property (weak) IBOutlet NSButton *oilEnableButton;
 
 @property (weak) IBOutlet NSButton *agEnableButton;
+
+@property (weak) IBOutlet WebView *webView;
 
 - (IBAction)oilCheckAction:(id)sender;
 

@@ -12,6 +12,7 @@
 		012EC0031DB8B8720022B70B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 012EC0021DB8B8720022B70B /* ViewController.m */; };
 		012EC0051DB8B8720022B70B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 012EC0041DB8B8720022B70B /* Assets.xcassets */; };
 		012EC0081DB8B8720022B70B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012EC0061DB8B8720022B70B /* Main.storyboard */; };
+		01AA897E1DC08AA600884A8B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01AA897D1DC08AA600884A8B /* WebKit.framework */; };
 		01D6A2C51DB9EC7E00AC0500 /* ICBaseHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D6A2C01DB9EC7E00AC0500 /* ICBaseHttpService.m */; };
 		01D6A2C61DB9EC7E00AC0500 /* XHNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D6A2C21DB9EC7E00AC0500 /* XHNetworkManager.m */; };
 		01D6A2C71DB9EC7E00AC0500 /* XHPricePullService.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D6A2C41DB9EC7E00AC0500 /* XHPricePullService.m */; };
@@ -29,6 +30,7 @@
 		012EC0041DB8B8720022B70B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		012EC0071DB8B8720022B70B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		012EC0091DB8B8720022B70B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01AA897D1DC08AA600884A8B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		01D6A2BF1DB9EC7E00AC0500 /* ICBaseHttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICBaseHttpService.h; sourceTree = "<group>"; };
 		01D6A2C01DB9EC7E00AC0500 /* ICBaseHttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICBaseHttpService.m; sourceTree = "<group>"; };
 		01D6A2C11DB9EC7E00AC0500 /* XHNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHNetworkManager.h; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01AA897E1DC08AA600884A8B /* WebKit.framework in Frameworks */,
 				D709D20E8AB70521F14AC961 /* libPods-XHHelper-Mac.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,6 +125,7 @@
 		2E93A653E17C07FCDCF85A79 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				01AA897D1DC08AA600884A8B /* WebKit.framework */,
 				D2BA60C4C00FF9DF57842D50 /* libPods-XHHelper-Mac.a */,
 			);
 			name = Frameworks;
